@@ -30,10 +30,19 @@
       <h1>Магазин готовых шаблонов</h1>
 
       <aside class="filter">
-        <form class="filter-form" action="index.html" method="get">
+        <h2 class="visually-hidden">Фильтр шаблонов</h2>
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
             <legend>Стоимость</legend>
-            <!-- Слайдер с диапазоном значений -->
+            <input type="range"  min="0" max="15000" name="price" value="7000">
+            <label class="min-price">
+              От
+              <input type="text" name="filter-min-price" value="1000">
+            </label>
+            <label class="max-price">
+              До
+              <input type="text" name="filter-max-price" value="10000">
+            </label>
           </fieldset>
           <fieldset>
             <legend>Сетка</legend>
@@ -57,6 +66,8 @@
             <input type="checkbox" id="filter-features-cart" name="cart">
             <label for="filter-features-cart">Корзина</label>
           </fieldset>
+
+          <input type="submit" value="Показать">
         </form>
       </aside>
 
@@ -74,57 +85,58 @@
         </ul>
       </aside>
       <article class="catalog">
+        <h2 class="visually-hidden">Каталог шаблонов</h2>
         <ul class="catalog-list">
-          <li class="catalog-list-item">
-            <img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон Sedona">
-            <section class="item-description">
-              <h2 class="item-heading">Sedona</h2>
-              <p class="item-description">Информационный сайт для туристов</p>
+          <li class="catalog-item">
+            <img class="catalog-item-image" src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон Sedona">
+            <section class="catalog-item-information">
+              <h2 class="catalog-item-heading">Sedona</h2>
+              <p class="catalog-item-description">Информационный сайт для туристов</p>
               <a href="#" class="button add-to-cart">9 900 руб.</a>
             </section>
           </li>
 
-          <li class="catalog-list-item">
-            <img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон Pink App">
-            <section class="item-description">
-              <h2 class="item-heading">Pink App</h2>
-              <p class="item-description">Продуктовый лендинг приложения для iOS и Android</p>
+          <li class="catalog-item">
+            <img class="catalog-item-image" src="img/img-pink.jpg" width="360" height="576" alt="Шаблон Pink App">
+            <section class="catalog-item-information">
+              <h2 class="catalog-item-heading">Pink App</h2>
+              <p class="catalog-item-description">Продуктовый лендинг приложения для iOS и Android</p>
               <a href="#" class="button add-to-cart">9 900 руб.</a>
             </section>
           </li>
 
-          <li class="catalog-list-item">
-            <img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон Barbershop">
-            <section class="item-description">
-              <h2 class="item-heading">Barbershop</h2>
-              <p class="item-description">Сайт салоны красоты.Для мужчин, да.</p>
+          <li class="catalog-item">
+            <img class="catalog-item-image" src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон Barbershop">
+            <section class="catalog-item-information">
+              <h2 class="catalog-item-heading">Barbershop</h2>
+              <p class="catalog-item-description">Сайт салоны красоты. Для мужчин, да.</p>
               <a href="#" class="button add-to-cart">9 900 руб.</a>
             </section>
           </li>
 
-          <li class="catalog-list-item">
-            <img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон Mishka">
-            <section class="item-description">
-              <h2 class="item-heading">Mishka</h2>
-              <p class="item-description">Интернет-магазин вязаных игрушек</p>
+          <li class="catalog-item">
+            <img class="catalog-item-image" src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон Mishka">
+            <section class="catalog-item-information">
+              <h2 class="catalog-item-heading">Mishka</h2>
+              <p class="catalog-item-description">Интернет-магазин вязаных игрушек</p>
               <a href="#" class="button add-to-cart">9 900 руб.</a>
             </section>
           </li>
 
-          <li class="catalog-list-item">
-            <img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон A Plus">
-            <section class="item-description">
-              <h2 class="item-heading">A Plus</h2>
-              <p class="item-description">Лендинг курсов повышения квалификации</p>
+          <li class="catalog-item">
+            <img class="catalog-item-image" src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон A Plus">
+            <section class="catalog-item-information">
+              <h2 class="catalog-item-heading">A Plus</h2>
+              <p class="catalog-item-description">Лендинг курсов повышения квалификации</p>
               <a href="#" class="button add-to-cart">9 900 руб.</a>
             </section>
           </li>
 
-          <li class="catalog-list-item">
-            <img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон Кваст">
-            <section class="item-description">
-              <h2 class="item-heading">Кваст</h2>
-              <p class="item-description">Промо-сайт производителя крафтового кваса</p>
+          <li class="catalog-item">
+            <img class="catalog-item-image" src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон Кваст">
+            <section class="catalog-item-information">
+              <h2 class="catalog-item-heading">Кваст</h2>
+              <p class="catalog-item-description">Промо-сайт производителя крафтового кваса</p>
               <a href="#" class="button add-to-cart">9 900 руб.</a>
             </section>
           </li>
