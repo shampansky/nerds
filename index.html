@@ -13,8 +13,8 @@
   <body>
 
     <header class="main-header">
-      <nav class="main-navigation">
-        <a href="#">
+      <nav class="main-navigation container">
+        <a class="main-header-logo" href="#">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип компании Nerds">
         </a>
         <ul class="site-navigation">
@@ -29,112 +29,124 @@
       </nav>
     </header>
 
-    <main class="container">
+    <main>
       <h1 class="visually-hidden">Дизайн-студия Nerds</h1>
-      <article class="slider"> <!-- Сллайдер -->
-        <ul class="slider-list">
-          <li class="slider-item">
-            <h3>Долго, дорого, скрупулезно.</h3>
-            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-            <a class="button button-red" href="#">Узнать больше</a>
-          </li>
-          <li class="slider-item">
-            <h3>Любим математику как никто другой</h3>
-            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-            <a class="button button-red" href="#">Узнать больше</a>
-          </li>
-          <li class="slider-item">
-            <h3>Только ночь, только хардкор</h3>
-            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-            <a class="button button-red" href="#">Узнать больше</a>
-          </li>
-        </ul>
+
+        <article class="slider"> <!-- Сллайдер -->
+          <div class="container">
+          <ul class="slider-list">
+            <li class="slider-item">
+                <h3>Долго, дорого, скрупулезно.</h3>
+                <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                <a class="button button-red" href="#">Узнать больше</a>
+            </li>
+            <li class="slider-item">
+                <h3>Любим математику как никто другой</h3>
+                <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                <a class="button button-red" href="#">Узнать больше</a>
+            </li>
+            <li class="slider-item">
+                <h3>Только ночь, только хардкор</h3>
+                <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                <a class="button button-red" href="#">Узнать больше</a>
+            </li>
+          </ul>
+      </div>
+
       </article> <!-- Конец сллайдера -->
+      <div class="container">
+        <section class="services">
+          <h2 class="visually-hidden">Чем мы занимаемся</h2>
+          <ul class="services-list">
+            <li class="services-item">
+              <img src="img/services-websites.png" width="300" height="146" alt="Веб-сайты">
+              <h3>Веб-сайты</h3>
+              <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+              <button class="button button-red" type="button" name="open-popup">Заказать</button>
+            </li>
+            <li class="services-item">
+              <img src="img/services-applications.png" width="300" height="146" alt="Приложения">
+              <h3>Приложения</h3>
+              <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+              <button class="button button-green" type="button" name="open-popup">Заказать</button>
+            </li>
+            <li class="services-item">
+              <img src="img/services-presentations.png" width="300" height="146" alt="Презентации">
+              <h3>Презентации</h3>
+              <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+              <button class="button button-yellow" type="button" name="open-popup">Заказать</button>
+            </li>
+          </ul>
+        </section>
 
-      <section class="services">
-        <h2 class="visually-hidden">Чем мы занимаемся</h2>
-        <ul class="services-list">
-          <li class="services-item">
-            <img src="img/services-websites.png" width="300" height="146" alt="Веб-сайты">
-            <h3>Веб-сайты</h3>
-            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <button class="button button-red" type="button" name="open-popup">Заказать</button>
-          </li>
-          <li class="services-item">
-            <img src="img/services-applications.png" width="300" height="146" alt="Приложения">
-            <h3>Приложения</h3>
-            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <button class="button button-green" type="button" name="open-popup">Заказать</button>
-          </li>
-          <li class="services-item">
-            <img src="img/services-presentations.png" width="300" height="146" alt="Презентации">
-            <h3>Презентации</h3>
-            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <button class="button button-yellow" type="button" name="open-popup">Заказать</button>
-          </li>
-        </ul>
-      </section>
+        <section class="about">
+          <div class="about-left">
+            <h2>Кто мы есть</h2>
+            <b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+            <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+            <p class="strong-label">Выполняем заказы на разработку:</p>
+            <ul class="about-services-list">
+              <li>Веб-сайтов любой сложности</li>
+              <li>Мобильных приложений для iOS и Android</li>
+              <li>Слайдшоу и видео для корпоративных презентаций</li>
+            </ul>
+          </div>
+          <div class="about-right">
+            <img src="img/logo-large.jpg" width="360" height="208" alt="Логотип компании Nerds">
+            <p class="strong-label">с 2004 года Любим точность во всем:</p>
+    	      <table class="statistic">
+              <tr>
+                <td class="statistic-numbers">146<span class="statistic-units">%</span></td>
+                <td class="statistic-numbers">100<span class="statistic-units">%</span></td>
+                <td class="statistic-numbers">50<span class="statistic-units">%</span></td>
+              </tr>
+              <tr>
+                <td class="statistic-name">Уровень<br>самоотдачи</td>
+                <td class="statistic-name">Соблюдение<br>сроков</td>
+                <td class="statistic-name">Минимальная<br>предоплата</td>
+              </tr>
+            </table>
+          </div>
 
-      <section class="about">
-        <h2>Кто мы есть</h2>
-        <b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <p class="strong-label">Выполняем заказы на разработку:</p>
-        <ul>
-          <li>Веб-сайтов любой сложности</li>
-          <li>Мобильных приложений для iOS и Android</li>
-          <li>Слайдшоу и видео для корпоративных презентаций</li>
-        </ul>
-	      <img src="img/logo-large.jpg" width="360" height="208" alt="Логотип компании Nerds">
-        <p class="strong-label">с 2004 года Любим точность во всем:</p>
-	      <table class="statistic">
-          <tr>
-            <td class="statistic-numbers">146<span class="statistic-units">%</span></td>
-            <td class="statistic-numbers">100<span class="statistic-units">%</span></td>
-            <td class="statistic-numbers">50<span class="statistic-units">%</span></td>
-          </tr>
-          <tr>
-            <td class="statistic-name">Уровень<br>самоотдачи</td>
-            <td class="statistic-name">Соблюдение<br>сроков</td>
-            <td class="statistic-name">Минимальная<br>предоплата</td>
-          </tr>
-        </table>
-      </section>
+        </section>
 
-      <section class="clients">
-        <h2 class="visually-hidden">Наши клиенты</h2>
-        <ul class="clients-list">
-          <li class="clients-item">
-            <a href="#"><img src="img/html-academy-logo.png" width="199" height="68" alt="Логотип Html academy"></a>
-          </li>
-          <li class="clients-item">
-            <a href="#"><img src="img/barbershop-borodinski-logo.png" width="209" height="90" alt="Логотип Barbershop Borodinski"></a>
-          </li>
-          <li class="clients-item">
-            <a href="#"><img src="img/pink-logo.png" width="185" height="52" alt="Логотип Pink"></a>
-          </li>
-          <li class="clients-item">
-            <a href="#"><img src="img/mishka-logo.png" width="173" height="84" alt="Логотип Mishka"></a>
-          </li>
-        </ul>
-      </section>
-
-      <section class="location">
-        <h2 class="visually-hidden">Как нас найти</h2>
-        <div class="contact-info">
-          <h3>Nёrds Design Studio</h3>
-          <address class="address-info">
-            191186, Санкт-Петербург,
-            ул. Б. Конюшенная, д. 19/8<br>
-            <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a><br>
-            <button class="button button-red">Напишите нам</button>
-          </address>
-        </div>
-      </section>
+        <section class="clients">
+          <h2 class="visually-hidden">Наши клиенты</h2>
+          <ul class="clients-list">
+            <li class="clients-item">
+              <a href="#"><img src="img/html-academy-logo.png" width="199" height="68" alt="Логотип Html academy"></a>
+            </li>
+            <li class="clients-item">
+              <a href="#"><img src="img/barbershop-borodinski-logo.png" width="209" height="90" alt="Логотип Barbershop Borodinski"></a>
+            </li>
+            <li class="clients-item">
+              <a href="#"><img src="img/pink-logo.png" width="185" height="52" alt="Логотип Pink"></a>
+            </li>
+            <li class="clients-item">
+              <a href="#"><img src="img/mishka-logo.png" width="173" height="84" alt="Логотип Mishka"></a>
+            </li>
+          </ul>
+        </section>
+      </div>
 
     </main>
 
     <footer class="main-footer">
+      <section class="location">
+        <div class="container">
+          <h2 class="visually-hidden">Как нас найти</h2>
+          <div class="contact-info">
+            <h3>Nёrds Design Studio</h3>
+            <address class="address-info">
+              191186, Санкт-Петербург,
+              ул. Б. Конюшенная, д. 19/8<br>
+              <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a><br>
+              <button class="button button-red">Напишите нам</button>
+            </address>
+          </div>
+        </div>
+      </section>
+      <section class="social-info container">
       <ul class="social-links">
         <li>
           <a class="social-button" href="#">Вконтакте</a>
@@ -146,8 +158,10 @@
           <a class="social-button" href="#">Instagram</a>
         </li>
       </ul>
-      <b>Давайте дружить, это выгодно!</b>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
+      <div class="social-text">
+        <b>Давайте дружить, это выгодно!</b>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
     </footer>
 
     <section class="modal">

@@ -1,3 +1,5 @@
+/* Глобальные стили
+----------------------------------*/
 body {
   margin: 0;
   padding: 0;
@@ -13,6 +15,12 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .button {
@@ -100,16 +108,50 @@ a {
   background-color: #d7373b;
 }
 
+.main-navigation,
+main.container,
+.site-navigation,
+.user-navigation,
+.slider,
+.slider .container,
+.services,
+.services-item,
+.about,
+.clients,
+.clients-item,
+.location,
+.contact-info,
+.adress-info,
+.main-footer,
+.social-links,
+.social-button,
+.social-info {
+  border: 1px solid red; /* block outline */
+}
+
+/* Хедер
+----------------------------------*/
+.main-header {
+  background-color: #eeeeee;
+}
+
 .main-navigation {
+  display: flex;
+  padding-top: 50px;
+
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
 
-  background-color: #ffffff;
+
 }
 
 .site-navigation,
 .user-navigation {
+  margin: 0;
+  padding: 0;
+  margin-top: 26px;
+
   list-style: none;
 }
 
@@ -132,10 +174,41 @@ a {
   border-bottom: 2px solid #fb565a;
 }
 
+.user-navigation {
+  margin-left: auto;
+}
+
+.main-header-logo {
+  margin-right: 200px;
+}
+
+/* Основной контент
+----------------------------------*/
+
 .page-title {
+  padding: 93px;
+  margin: 0;
+  margin-bottom: 60px;
   font-size: 55px;
   line-height: 55px;
+  text-align: center;
+  font-weight: 500;
   color: #000000;
+  background-color: #eeeeee;
+}
+
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.catalog-right-column {
+  width: 760px;
+}
+
+.catalog-left-column {
+  width: 260px;
 }
 
 .filter {
@@ -166,6 +239,14 @@ a {
   border: none;
   color: #283136;
   line-height: 22px;
+}
+
+.sort-order-block {
+  display: flex;
+  justify-content: space-between;
+}
+.sort-order-links {
+  display: flex;
 }
 
 .sort-order-block > p {
@@ -200,7 +281,18 @@ a {
 }
 
 .catalog-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 26px;
+}
+
+.catalog-item {
+  width: 360px;
+  margin-bottom: 34px;
 }
 
 .catalog-item-heading {
@@ -219,6 +311,8 @@ a {
 
 .pagination {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .pagination-item-current a {
@@ -226,7 +320,14 @@ a {
   border: 3px solid #dbdbdb;
 }
 
+.slider {
+  margin-bottom: 80px;
+}
+
 .slider-list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 .slider-item h3 {
@@ -236,11 +337,23 @@ a {
   font-weight: 400;
 }
 
+.services {
+  margin-bottom: 80px;
+}
+
 .services-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
 .services-item {
+  width: 300px;
+  margin-right: 60px;
+
   text-align: left;
 }
 
@@ -250,11 +363,34 @@ a {
   color: #000000;
 }
 
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 80px;
+  padding-top: 40px;
+
+  border-top: 2px solid #eeeeee;
+}
+
 .about b {
   font-size: 45px;
   line-height: 45px;
   color: #000000;
   font-weight: 500;
+}
+
+.about-services-list {
+  margin: 0;
+  list-style: none;
+}
+
+.about-left {
+  width: 660px;
+}
+
+.about-right {
+  width: 360px;
 }
 
 .strong-label {
@@ -285,11 +421,29 @@ a {
   line-height: 18px;
 }
 
+.clients {
+  margin-bottom: 80px;
+
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+}
+
 .clients-list {
+  height: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
 .clients-item {
+  width: 260px;
+
+  text-align: center;
+
   opacity: 0.2;
 }
 
@@ -299,6 +453,19 @@ a {
 
 .clients-item:active {
   opacity: 0.1;
+}
+
+/* Футер
+----------------------------------*/
+.location {
+  margin-bottom: 70px;
+}
+
+.contact-info {
+  width: 220px;
+  padding: 50px;
+
+  background-color: #ffffff;
 }
 
 .contact-info h3 {
@@ -320,8 +487,8 @@ a {
   color: #666666;
 }
 
-.social-links {
-  list-style: none;
+.main-footer {
+  margin-bottom: 70px;
 }
 
 .main-footer b {
@@ -335,6 +502,24 @@ a {
   line-height: 22px;
   color: #444444;
 }
+
+.social-info {
+  display: flex;
+}
+
+.social-links {
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-right: 140px;
+  padding: 0;
+
+  list-style: none;
+}
+
+/* Модальные окна
+----------------------------------*/
 
 .modal h2 {
   font-size: 45px;
