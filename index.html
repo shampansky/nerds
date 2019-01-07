@@ -148,7 +148,7 @@
               ул. Б. Конюшенная, д. 19/8<br>
               <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
             </address>
-            <button class="button button-red">Напишите нам</button>
+            <button class="button button-red button-write-us">Напишите нам</button>
           </div>
         </div>
       </section>
@@ -199,18 +199,42 @@
       </section>
     </footer>
 
-    <!-- <section class="modal">
+    <section class="modal modal-write-us">
       <h2>Напишите нам</h2>
       <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
-        <label for="contact-form-user-name">Ваше имя:</label>
-        <input type="text" id="contact-form-user-name" name="user-name" placeholder="Имя Фамилия">
-        <label for="contact-form-user-email">Ваш e-mail:</label>
-        <input type="email" id="contact-form-user-email" name="user-email" placeholder="email@example.com">
-        <label for="contact-form-user-message">Текст письма:</label>
-        <textarea name="user-message" id="contact-form-user-message" rows="8" cols="80" placeholder="В свободной форме"></textarea>
+        <p class="contact-form-w360">
+          <label for="contact-form-user-name">Ваше имя:</label>
+          <input type="text" id="contact-form-user-name" name="user-name" placeholder="Имя Фамилия">
+        </p>
+        <p class="contact-form-w360">
+          <label for="contact-form-user-email">Ваш e-mail:</label>
+          <input type="email" id="contact-form-user-email" name="user-email" placeholder="email@example.com">
+        </p>
+        <p class="contact-form-w760">
+          <label for="contact-form-user-message">Текст письма:</label>
+          <textarea name="user-message" id="contact-form-user-message" rows="5" cols="80" placeholder="В свободной форме"></textarea>
+        </p>
         <input class="button button-red" type="submit" value="Отправить">
       </form>
-    </section> -->
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+
+    <script>
+      var modalLink = document.querySelector(".button-write-us");
+      var modalWindow = document.querySelector(".modal-write-us");
+      var modalClose = document.querySelector(".modal-close");
+
+      modalLink.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        modalWindow.classList.add("modal-show");
+      });
+
+      modalClose.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        modalWindow.classList.remove("modal-show");
+      });
+
+    </script>
 
   </body>
 </html>
